@@ -9,6 +9,9 @@ apt install wayland-protocols xwayland # GUI
 apt install kwin_wayland # Wayland compositor
 apt install libwaykitgtk-6.0-4 # WebView
 
+# Apps
+apt install konsole
+
 read -p "Change keyboard method ? [Y/n] " -n 1 -r # Only for keyboard changes.
 echo
 if [[ $REPLY =~ ^[Yy]$ ]]
@@ -21,6 +24,9 @@ read -p "Install Dev Tools ? [Y/n] " -n 1 -r # Developper Only. Check https://ta
 echo
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
+    apt install rustc
     apt install npm
     npm install --save-dev @tauri-apps/cli@latest
 fi
+
+cat load.sh >> # Setting up the file to load automatically as superuser on startup.
