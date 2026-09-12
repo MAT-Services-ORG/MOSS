@@ -1,1 +1,2 @@
-kwin_wayland konsole
+#kwin_wayland konsole # MINIMAL
+startplasma-wayland # FULL
